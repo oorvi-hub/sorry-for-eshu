@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Eshu 💗</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffd6e8;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+    }
+
+    #content {
+      display: none;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #d63384;
+    }
+
+    .text {
+      font-size: 22px;
+      margin: 15px 0;
+      color: #b3005e;
+    }
+
+    img {
+      width: 250px;
+      margin: 15px;
+      border-radius: 15px;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffd6e8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay" id="lock">
+  <h2>💖 Private Page 💖</h2>
+  <p>Enter the password</p>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="unlock()">Open 💌</button>
+</div>
+
+<div id="content">
+  <h1>I’m Sorry & I Love You Eshu 💕</h1>
+
+  <div class="text">I’m really really sorry 😭❤️</div>
+  <div class="text">I love you Eshu 💖💖</div>
+  <div class="text">I’m sorry for everything 💔👉❤️</div>
+  <div class="text">I love you more than words can say 💞</div>
+  <div class="text">Please forgive me 🥺💗</div>
+  <div class="text">I love you Eshu forever ♾️❤️</div>
+
+  <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
+  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif">
+  <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+  <img src="https://media.giphy.com/media/f9EmXxglhdhAj1bo28/giphy.gif">
+</div>
+
+<script>
+  function unlock() {
+    const pass = document.getElementById("password").value;
+    if (pass === "eshu") {  // 🔒 change password here
+      document.getElementById("lock").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    } else {
+      alert("Wrong password 💔");
+    }
+  }
+</script>
+
+</body>
+</html>
